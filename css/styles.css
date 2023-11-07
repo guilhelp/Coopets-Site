@@ -358,9 +358,8 @@ section {
   background: linear-gradient(
     to bottom,
     #573C35 37%,
-    #ffffff 98%
+    #573C35 98%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-image: url('../images/dogs_brincando.jpg');
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90647', endColorstr='#eb402c',GradientType=0 ); /* IE6-9 */
   background-repeat: no-repeat;
   color: #ffffff;
@@ -396,7 +395,7 @@ nav {
 }
 
 #navbar ul li a {
-  color: #000000;
+  color: #fff;
  
 }
 
@@ -417,16 +416,14 @@ nav {
   transition: 0.3s;
 }
 
-.sticky .logo {
-  color: #d90647;
-}
 
 .sticky #navbar ul li a {
   color: white;
+  
 }
 
 .sticky #navbar ul li a:hover {
-  color: #d90647;
+  color: #E8CBC1;
 }
 
 .sticky .navbar {
@@ -444,6 +441,7 @@ nav {
 #myNav {
   display: block;
   font-family: 'Roboto';
+  
 }
 #mobileNav {
   position: absolute;
@@ -451,6 +449,7 @@ nav {
   display: none; /* Hide Mobile Nav on Desktop or big devices */
   cursor: pointer;
   user-select: none;
+  
 }
 
 #mobileNav span {
@@ -469,6 +468,7 @@ nav {
   color: white;
   transition: 0.3s;
   text-align: center;
+  
 }
 
 .overlay-content {
@@ -920,7 +920,8 @@ nav {
   }
 
   #mobileNav {
-    display: block;
+    display: flex;
+    margin-top: 20px;
   }
 
   #home {
