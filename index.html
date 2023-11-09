@@ -1,331 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CooPets</title>
 
-    <!-- Favicon -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CooPets</title>
 
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="images/app_logo.png"
-    />
-    <link 
-      href='https://fonts.googleapis.com/css?family=Luckiest Guy' 
-      rel='stylesheet'
-    />
-    <link 
-      href='https://fonts.googleapis.com/css?family=Roboto' 
-      rel='stylesheet'
-    />
-    <link rel="shortcut icon" href="images/logo_sem_fundo.png" />
-    <!-- End: Favicon -->
+  <!-- Favicon -->
 
-    <!-- Main CSS File -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/grid.css" />
-    <!-- End: Main CSS File -->
-  </head>
-  <body>
-    <!-- Preloader -->
-    <div class="preloader">
-      <div class="loader"></div>
-    </div>
-    <!-- Preloader End -->
-    <!-- Header Section -->
-    <header id="home">
-      <nav>
-        <div class="navbar-logo">
-          <a href="#" class="logo"><img class="logo-img" src="images/logo_sem_fundo.png" alt="" /></a>
-        </div>
-        <div id="navbar">
-          <ul>
-            <li><a href="#home">INÍCIO</a></li>
-            <li><a href="#features">INFORMAÇÕES</a></li>
-            <li><a href="#testimonial">DESENVOLVEDORES</a></li>
-            <li><a href="#howto">FUNCIONALIDADES</a></li>
-            <li><a href="#download">BAIXAR</a></li>
-          </ul>
-        </div>
-        <div id="mobileNav">
-          <span onclick="openNav()">&#9776;</span>
-        </div>
-        <div id="myNav" class="mobileNavOverlay">
-          <div class="overlay-content">
-            <a href="javascript:void()" class="close-btn" onclick="closeNav()"
-              >&times;</a
-            >
-            <a href="#home" onclick="closeNav()">INÍCIO</a>
-            <a href="#features" onclick="closeNav()">INFORMAÇÕES</a>
-            <a href="#testimonial" onclick="closeNav()">DESENVOLVEDORES</a>
-            <a href="#howto" onclick="closeNav()">FUNCIONALIDADES</a>
-            <a href="#download" onclick="closeNav()">BAIXAR</a>
-          </div>
-        </div>
-      </nav>
-      <div id="hero">
-        <div class="row">
-          <div class="col span_1_of_2">
-            <div class="hero-description">
-             
-              <h1>
-                Seja</br>Bem-vindo(a)
-              </h1>
-              <p>
-                Encontrando um parceiro para seu pet!
-              </p>
+  <link rel="apple-touch-icon" sizes="180x180" href="images/app_logo.png" />
+  <link href='https://fonts.googleapis.com/css?family=Luckiest Guy' rel='stylesheet' />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' />
+  <link rel="shortcut icon" href="images/logo_sem_fundo.png" />
+  <!-- End: Favicon -->
 
-              <a href="#download" class="btn"
-                ><span class="download-btn">Baixe agora!</span></a
-              >
-            </div>
-          </div>
-        </div>
+  <!-- Main CSS File -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/grid.css" />
+  <!-- End: Main CSS File -->
+</head>
+
+<body>
+  <!-- Preloader -->
+  <div class="preloader">
+    <div class="loader"></div>
+  </div>
+  <!-- Preloader End -->
+  <!-- Header Section -->
+  <header id="home">
+    <nav>
+      <div class="navbar-logo">
+        <a href="#" class="logo"><img class="logo-img" src="images/logo_sem_fundo.png" alt="" /></a>
       </div>
-      <div class="shape-divider">
-        <div class="custom-shape-divider-bottom-1603385849">
-          <svg
-            data-name="Layer 1"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 1200 120"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-              class="shape-fill"
-            ></path>
-          </svg>
-        </div>
-      </div>
-      <button onclick="topFunction()" id="scrollUp" title="Go to top">
-        <svg
-          width="1.5rem"
-          height="1.5rem"
-          viewBox="0 0 16 16"
-          class="bi bi-arrow-up"
-          fill="currentColor"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"
-          />
-        </svg>
-      </button>
-    </header>
-    <!-- End: Header Section -->
-
-    <!-- Features Section -->
-    <section id="features">
-      <div class="row">
-        <div class="col span_1_of_2">
-          <div class="features-images">
-            <img class="features_1" src="images/features1.png" alt="" />
-          </div>
-        </div>
-        <div class="col span_1_of_2">
-          <div class="section-description features-description col1">
-            <h2 class="stylish_heading">
-              ENCONTRE UM PARCEIRO PARA SEU PET! 
-            </h2>
-            <p class="little-description">
-              Aqui no CooPets, você pode encontrar um pet de sua preferência com base nos filtros disponíveis, permitindo você curtir ou não um pet, e se caso houver curtidas mútuas, haverá um <span class="red_dot">PETCH</span>!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row second-features-row">
-        <div class="col span_1_of_2">
-          <div class="section-description features-description">
-            <h2 class="stylish_heading">
-              INTERAJA COM OUTROS DONOS DE ANIMAIS DOMÉSTICOS
-            </h2>
-            <p class="little-description">
-              Aqui no CooPets, você também pode conversar com outros donos de animais domésticos que estão a procura de um parceiro para seu animal, permitindo a troca de mensagens em um chat em <span class="red_dot">TEMPO REAL</span>!
-            </p>
-          </div>
-        </div>
-        <div class="col span_1_of_2">
-          <div class="features-images">
-            <img class="features_3" src="images/features2.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End: Features Section -->
-
-    <!-- Testimonial Section -->
-    <section id="testimonial">
-      <h2 class="stylish_heading">
-        DESENVOLVEDORES
-      </h2>
-      <div class="row">
-        <div class="col span_1_of_3">
-          <div class="bubble">
-              <img class="perfil" src="images/gui.png" alt="" />
-            <span class="company-name">GUILHERME LIMA DE PAULA</span>
-          </div>
-         
-        </div>
-        <div class="col span_1_of_3">
-          <div class="bubble">
-            <img class="perfil" src="images/higor.jpg" alt="" />
-            <span class="company-name">HIGOR MATHIAS SANTOS</span>
-          </div>
-          
-        </div>
-        <div class="col span_1_of_3">
-          <div class="bubble">
-            <img class="perfil" src="images/dan.png" alt="" />
-            <span class="company-name">DANIEL CRUZ MOREIRA</span>
-          </div>
-          
-        </div>
-      </div>
-    </section>
-    <!-- End: Testimonial Section -->
-
-    <!-- How To Section -->
-    <section id="howto">
-      <div class="row">
-        <div class="col span_1_of_3 first-col">
-          <div class="first-item">
-            <div class="item-description">
-              <h4>ENCONTRE PARCEIROS PARA SEU PET!</h4>
-              <p>
-                Com base nas suas preferências, busque parceiros para seu pet!
-              </p>
-            </div>
-            <div class="item-icon1">
-              <svg
-                width="2.5rem"
-                height="2.5rem"
-                viewBox="0 0 16 16"
-                class="bi bi-chat-heart-fill"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15Zm0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z"
-                />
-                
-              </svg>
-            </div>
-          </div>
-          <div class="first-item">
-            <div class="item-description">
-              <h4>CURTA OS PETS QUE VOCÊ PROCURA!</h4>
-              <p>
-                Avalie os pets que aparecerem para você com base nos filtros, curtindo ou não cada um deles!
-              </p>
-            </div>
-            <div class="item-icon1">
-              <svg
-                width="2.5rem"
-                height="2.5rem"
-                viewBox="0 0 16 16"
-                class="bi bi-hearts"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-              <path fill-rule="evenodd" d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z"/>
-              </svg>
-            </div>
-          </div>
-        </div>
-        <div class="col span_1_of_3 second-col">
-          <img class="big_image" src="images/login.png" alt="" />
-        </div>
-        <div class="col span_1_of_3 third-col">
-          <div class="last-item">
-            <div class="item-icon2">
-              <svg
-                width="2.5rem"
-                height="2.5rem"
-                viewBox="0 0 16 16"
-                class="bi bi-chat-dots-fill"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-              <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-                <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
-              </svg>
-            </div>
-            <div class="item-description">
-              <h4>CONVERSE COM OUTROS DONOS!</h4>
-              <p>
-                Interaja pelo chat com outros donos de pet!
-              </p>
-            </div>
-          </div>
-          <div class="last-item">
-            <div class="item-icon2">
-              <svg
-                width="2.5rem"
-                height="2.5rem"
-                viewBox="0 0 16 16"
-                class="bi bi-geo-alt-fill"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-              </svg>
-            </div>
-            <div class="item-description">
-              <h4>ENCONTRE PETS PARCEIROS PERTO DE VOCÊ!</h4>
-              <p>
-                Encontre pets parceiros perto de você com filtros de localização de 5, 10 ou 15 km de distância do seu CEP!
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End: How To Section -->
-
-    <!-- Download The App Section -->
-    <section id="download">
-      <div class="row">
-        <video class="app-logo" muted autoplay> <source src="images/coopetsvideo.mp4" type="video/mp4"> </video>
-        <h2 class="stylish_heading">
-          BAIXE AGORA O APLICATIVO! 
-        </h2>
-        <p class="">
-          DISPONÍVEL APENAS PARA ANDROID!
-        </p>
-
-        <a href="" class="btn"
-                ><span class="download-btn">BAIXE AQUI!</span></a
-              >
-      </div>
-    </section>
-    <!-- End: Download The App Section -->
-
-    <!-- Footer Section -->
-    <section id="footer">
-      <div class="links">
+      <div id="navbar">
         <ul>
           <li><a href="#home">INÍCIO</a></li>
-            <li><a href="#features">INFORMAÇÕES</a></li>
-            <li><a href="#testimonial">DESENVOLVEDORES</a></li>
-            <li><a href="#howto">FUNCIONALIDADES</a></li>
-            <li><a href="#download">BAIXAR</a></li>
+          <li><a href="#features">INFORMAÇÕES</a></li>
+          <li><a href="#testimonial">DESENVOLVEDORES</a></li>
+          <li><a href="#howto">FUNCIONALIDADES</a></li>
+          <li><a href="#download">BAIXAR</a></li>
         </ul>
       </div>
-      
-    </section>
-    <!-- End: Footer Section -->
+      <div id="mobileNav">
+        <span onclick="openNav()">&#9776;</span>
+      </div>
+      <div id="myNav" class="mobileNavOverlay">
+        <div class="overlay-content">
+          <a href="javascript:void()" class="close-btn" onclick="closeNav()">&times;</a>
+          <a href="#home" onclick="closeNav()">INÍCIO</a>
+          <a href="#features" onclick="closeNav()">INFORMAÇÕES</a>
+          <a href="#testimonial" onclick="closeNav()">DESENVOLVEDORES</a>
+          <a href="#howto" onclick="closeNav()">FUNCIONALIDADES</a>
+          <a href="#download" onclick="closeNav()">BAIXAR</a>
+        </div>
+      </div>
+    </nav>
+    <div id="hero">
+      <div class="row">
+        <div class="col span_1_of_2">
+          <div class="hero-description">
 
-    <!-- Required JavaScript Files & CDN -->
-    <!-- JQuery CDN -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <h1>
+              Seja</br>Bem-vindo(a)
+            </h1>
+            <p>
+              Encontrando um parceiro para seu pet!
+            </p>
 
-    <!-- Main JS Files -->
-    <script src="js/essential.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+            <a href="#download" class="btn"><span class="download-btn">Baixe agora!</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shape-divider">
+      <div class="custom-shape-divider-bottom-1603385849">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
+        </svg>
+      </div>
+    </div>
+    <button onclick="topFunction()" id="scrollUp" title="Go to top">
+      <svg width="1.5rem" height="1.5rem" viewBox="0 0 16 16" class="bi bi-arrow-up" fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd"
+          d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+      </svg>
+    </button>
+  </header>
+  <!-- End: Header Section -->
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="row">
+      <div class="col span_1_of_2">
+        <div class="features-images">
+          <img class="features_1" src="images/features1.png" alt="" />
+        </div>
+      </div>
+      <div class="col span_1_of_2">
+        <div class="section-description features-description col1">
+          <h2 class="stylish_heading">
+            ENCONTRE UM PARCEIRO PARA SEU PET!
+          </h2>
+          <p class="little-description">
+            Aqui no CooPets, você pode encontrar um pet de sua preferência com base nos filtros disponíveis, permitindo
+            você curtir ou não um pet, e se caso houver curtidas mútuas, haverá um <span class="red_dot">PETCH</span>!
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row second-features-row">
+      <div class="col span_1_of_2">
+        <div class="section-description features-description">
+          <h2 class="stylish_heading">
+            INTERAJA COM OUTROS DONOS DE ANIMAIS DOMÉSTICOS
+          </h2>
+          <p class="little-description">
+            Aqui no CooPets, você também pode conversar com outros donos de animais domésticos que estão a procura de um
+            parceiro para seu animal, permitindo a troca de mensagens em um chat em <span class="red_dot">TEMPO
+              REAL</span>!
+          </p>
+        </div>
+      </div>
+      <div class="col span_1_of_2">
+        <div class="features-images">
+          <img class="features_3" src="images/features2.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: Features Section -->
+
+  <!-- Testimonial Section -->
+  <section id="testimonial">
+    <h2 class="stylish_heading">
+      DESENVOLVEDORES
+    </h2>
+    <div class="row">
+      <div class="col span_1_of_3">
+        <div class="bubble">
+          <img class="perfil" src="images/gui.png" alt="" />
+          <span class="company-name">GUILHERME LIMA DE PAULA</span>
+        </div>
+
+      </div>
+      <div class="col span_1_of_3">
+        <div class="bubble">
+          <img class="perfil" src="images/higor.jpg" alt="" />
+          <span class="company-name">HIGOR MATHIAS SANTOS</span>
+        </div>
+
+      </div>
+      <div class="col span_1_of_3">
+        <div class="bubble">
+          <img class="perfil" src="images/dan.png" alt="" />
+          <span class="company-name">DANIEL CRUZ MOREIRA</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- End: Testimonial Section -->
+
+  <!-- How To Section -->
+  <section id="howto">
+    <div class="row">
+      <div class="col span_1_of_3 first-col">
+        <div class="first-item">
+          <div class="item-description">
+            <h4>ENCONTRE PARCEIROS PARA SEU PET!</h4>
+            <p>
+              Com base nas suas preferências, busque parceiros para seu pet!
+            </p>
+          </div>
+          <div class="item-icon1">
+            <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-chat-heart-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15Zm0-9.007c1.664-1.711 5.825 1.283 0 5.132-5.825-3.85-1.664-6.843 0-5.132Z" />
+
+            </svg>
+          </div>
+        </div>
+        <div class="first-item">
+          <div class="item-description">
+            <h4>CURTA OS PETS QUE VOCÊ PROCURA!</h4>
+            <p>
+              Avalie os pets que aparecerem para você com base nos filtros, curtindo ou não cada um deles!
+            </p>
+          </div>
+          <div class="item-icon1">
+            <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-hearts" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M4.931.481c1.627-1.671 5.692 1.254 0 5.015-5.692-3.76-1.626-6.686 0-5.015Zm6.84 1.794c1.084-1.114 3.795.836 0 3.343-3.795-2.507-1.084-4.457 0-3.343ZM7.84 7.642c2.71-2.786 9.486 2.09 0 8.358-9.487-6.268-2.71-11.144 0-8.358Z" />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="col span_1_of_3 second-col">
+        <img class="big_image" src="images/login.png" alt="" />
+      </div>
+      <div class="col span_1_of_3 third-col">
+        <div class="last-item">
+          <div class="item-icon2">
+            <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-chat-dots-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM5 8a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm4 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+              <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+            </svg>
+          </div>
+          <div class="item-description">
+            <h4>CONVERSE COM OUTROS DONOS!</h4>
+            <p>
+              Interaja pelo chat com outros donos de pet!
+            </p>
+          </div>
+        </div>
+        <div class="last-item">
+          <div class="item-icon2">
+            <svg width="2.5rem" height="2.5rem" viewBox="0 0 16 16" class="bi bi-geo-alt-fill" fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+          </div>
+          <div class="item-description">
+            <h4>ENCONTRE PETS PARCEIROS PERTO DE VOCÊ!</h4>
+            <p>
+              Encontre pets parceiros perto de você com filtros de localização de 5, 10 ou 15 km de distância do seu
+              CEP!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End: How To Section -->
+
+  <!-- Download The App Section -->
+  <section id="download">
+    <div class="row">
+      <div class="video-container">
+        <video muted autoplay loop controls>
+          <source src="images/coopetsvideo.mp4" type="video/mp4">
+        </video>
+      </div>
+      <h2 class="stylish_heading">
+        BAIXE AGORA O APLICATIVO!
+      </h2>
+      <p class="">
+        DISPONÍVEL APENAS PARA ANDROID!
+      </p>
+
+      <a href="" class="btn"><span class="download-btn">BAIXE AQUI!</span></a>
+    </div>
+  </section>
+  <!-- End: Download The App Section -->
+
+  <!-- Footer Section -->
+  <section id="footer">
+    <div class="links">
+      <ul>
+        <li><a href="#home">INÍCIO</a></li>
+        <li><a href="#features">INFORMAÇÕES</a></li>
+        <li><a href="#testimonial">DESENVOLVEDORES</a></li>
+        <li><a href="#howto">FUNCIONALIDADES</a></li>
+        <li><a href="#download">BAIXAR</a></li>
+      </ul>
+    </div>
+
+  </section>
+  <!-- End: Footer Section -->
+
+  <!-- Required JavaScript Files & CDN -->
+  <!-- JQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Main JS Files -->
+  <script src="js/essential.js"></script>
+  <script src="js/jquery.nice-select.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
