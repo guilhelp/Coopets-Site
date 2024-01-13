@@ -382,7 +382,7 @@ section {
     #573C35 37%,
     #573C35 98%
   ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/dogs_brincando.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
   background-size: cover;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d90647', endColorstr='#eb402c',GradientType=0 ); /* IE6-9 */
   background-repeat: no-repeat;
